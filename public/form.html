@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Vanilla App</title>
+  </head>
+  <body>
+    <form id="form" style="display: inline-grid;">
+        <label>First Name: </label>
+        <input type="text" name="firstName" required />
+
+        <label>Last Name: </label>
+        <input type="text" name="lastName" required />
+
+        <label>Age: </label>
+        <input type="number" name="age" required min="18" />
+
+        <label>Email Address: </label>
+        <input type="email" name="email" required pattern="\S+@\S+\.\S+" />
+
+        <label>Phone Number: </label>
+        <input type="tel" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+
+        <input type="submit" />
+      </form>
+      <script>
+        function logSubmit(event) {
+          event.preventDefault();
+          alert("Form submitted")
+        }
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', logSubmit);
+      </script>
+  </body>
+</html>
