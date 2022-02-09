@@ -12,6 +12,10 @@ export default function App() {
       >
         <Link to="/hooks">React-Hooks</Link> |{" "}
         <Link to="/formik">Formik</Link> |{" "}
+        <Link to="/formik2">Formik Take Two</Link> |{" "}
+        <Link to="/formik3">Formik Numero Trois</Link> |{" "}
+        <Link to="/formik4">Formik Final</Link> |{" "}
+        <Link to="/form">React with Form tag</Link> |{" "}
         <a href="form.html">VanillaJS</a>
       </nav>
     </div>

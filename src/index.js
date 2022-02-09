@@ -26,7 +26,11 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import FormikPage from "./FormikPage";
+import FormikPageTakeTwo from "./FormikPageTakeTwo";
+import FormikPageNumeroTrois from "./FormikPageNumeroTrois";
+import FormikPageFinal from "./FormikPageFinal";
 import ReactHookFormPage from "./ReactHookFormPage";
+import ReactWithForm from "./ReactWithForm";
 
 const rootElement = document.getElementById("root");
 render(
@@ -35,6 +39,10 @@ render(
       <Route path="/" element={<App />} />
       <Route path="hooks" element={<ReactHookFormPage />} />
       <Route path="formik" element={<FormikPage />} />
+      <Route path="formik2" element={<FormikPageTakeTwo />} />
+      <Route path="formik3" element={<FormikPageNumeroTrois />} />
+      <Route path="formik4" element={<FormikPageFinal />} />
+      <Route path="form" element={<ReactWithForm />} />
     </Routes>
   </BrowserRouter>,
   rootElement

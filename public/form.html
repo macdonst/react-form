@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
     <title>Vanilla App</title>
   </head>
   <body>
@@ -35,7 +25,9 @@
       <script>
         function logSubmit(event) {
           event.preventDefault();
-          alert("Form submitted")
+          const formData = new FormData(event.target);
+          const formProps = Object.fromEntries(formData);
+          console.log(JSON.stringify(formProps, null, 2));
         }
 
         const form = document.getElementById('form');
